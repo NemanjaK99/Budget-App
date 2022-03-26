@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------- HEAD STYLE -------------------*/
+
+#head-container {
+  color: #fff;
+  height: 250px;
+  background-image: url("../img/Budget.png");
+  background-size: cover;
+  text-align: center;
+}
+header {
+  font-size: 16px;
+  padding: 15px;
+}
+.available-budget {
+  font-size: 32px;
+}
+.income,
+.expense {
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 10px;
+  justify-content: flex-start;
+}
+.income {
+  background-color: rgb(43, 80, 127);
+}
+.expense {
+  background-color: rgb(160, 75, 24);
+}
+.heading {
+  width: 180px;
+  text-align: start;
+}
+.amount {
+  display: flex;
+}
+.percent {
+  width: 50px;
+  margin-left: 15px;
+  font-size: 12px;
+  padding: 3px;
+  background-color: rgb(177, 102, 55);
+  border-radius: 3px;
+}
+
+/* ------------------- END OF HEAD STYLE ------------------- */
+
+/* FORM STYLE */
+
+#inputs {
+  width: 100%;
+  height: 70px;
+  background: rgb(220, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#plus-or-minus {
+  height: 35px;
+  width: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+#description {
+  padding: 5px;
+  height: 35px;
+  width: 350px;
+  border: 1px solid rgb(160, 75, 24);
+  border-radius: 5px;
+}
+#value {
+  padding: 5px;
+  height: 35px;
+  width: 80px;
+  border: 1px solid rgb(160, 75, 24);
+  border-radius: 5px;
+}
+.submit-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(160, 75, 24);
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+}
+.submit-btn i {
+  font-size: 18px;
+}
+
+/* ------------------- END OF FORM STYLE ------------------- */
+
+/* ------------------- INPUTS STYLE ------------------- */
+
+#inputs-container {
+  display: flex;
+  justify-content: center;
+}
+.income-container,
+.expense-container {
+  width: 30%;
+  margin-top: 50px;
+}
+.income-container h2 {
+  color: rgb(43, 80, 127);
+  border-bottom: 1px solid rgb(228, 218, 218);
+}
+.expense-container {
+  margin-left: 50px;
+}
+.expense-container h2 {
+  color: rgb(177, 102, 55);
+  border-bottom: 1px solid rgb(228, 218, 218);
+}
+.income-item,
+.expense-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid rgb(228, 218, 218);
+}
+.income-item-description,
+.expense-item-description {
+  color: rgb(113, 148, 194);
+}
+.income-item-content {
+  display: flex;
+  align-items: center;
+  color: rgb(113, 148, 194);
+}
+.expense-item-content {
+  display: flex;
+  align-items: center;
+  color: rgb(177, 102, 55);
+}
+.expense-percent {
+  margin-left: 10px;
+  font-size: 12px;
+  width: 35px;
+  padding: 5px;
+  height: 30px;
+  background-color: rgb(255, 219, 197);
+  border-radius: 5px;
+}
+.delete-item-btn,
+.delete-item-btn-exp {
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(209, 95, 95);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  visibility: hidden;
+}
+.expense-item:hover .delete-item-btn-exp {
+  visibility: visible;
+}
+.income-item:hover .delete-item-btn {
+  visibility: visible;
+}
+
+/* ------------------- END OF INPUTS STYLE ------------------- */

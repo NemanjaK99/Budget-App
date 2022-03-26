@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Budget App</title>
+  </head>
+  <body>
+    <!-- HEAD CONTAINER -->
+    <div id="head-container">
+      <header>
+        <p class="date"></p>
+      </header>
+      <div id="budget">
+        <div class="available-budget">0</div>
+        <div class="income">
+          <div class="heading">
+            <p>INCOME</p>
+          </div>
+          <div class="amount">
+            <div class="income-amount">+2,200</div>
+          </div>
+        </div>
+        <div class="expense">
+          <div class="heading">
+            <p>EXPENSES</p>
+          </div>
+          <div class="amount">
+            <div class="expense-amount">1500</div>
+            <div class="percent">70%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END HEAD CONTAINER -->
+
+    <!-- INPUTS FORM -->
+    <div id="inputs">
+      <form class="input-form">
+        <select name="operators" id="plus-or-minus" onchange="colorChange()">
+          <option value="minus" selected>-</option>
+          <option value="plus">+</option>
+        </select>
+        <input
+          type="text"
+          placeholder="Add description"
+          maxlength="50"
+          id="description"
+          required
+        />
+        <input type="number" min="1" placeholder="Value" id="value" required />
+        <button class="submit-btn" onclick="submitClick()">
+          <i class="fa-solid fa-check"></i>
+        </button>
+      </form>
+    </div>
+    <!-- END INPUTS FORM -->
+
+    <!-- INPUTS CONTAINER -->
+    <div id="inputs-container">
+      <div class="income-container">
+        <h2>INCOME</h2>
+        <div class="income-items">
+          <!-- <div class="income-item">
+            <div class="income-item-description">Salary</div>
+            <div class="income-item-content">
+              <div class="income-item-value">+3,000.00</div>
+              <div class="delete-item">
+                <button class="delete-item-btn">DEL</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="expense-container">
+        <h2>EXPENSES</h2>
+        <div class="expense-items">
+          <!-- <div class="expense-item">
+            <div class="expense-item-description">Rent</div>
+            <div class="expense-item-content">
+              <div class="expense-item-value">-900.00</div>
+              <div class="expense-percent">70%</div>
+              <div class="delete-item">
+                <button class="delete-item-btn-exp">DEL</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- END INPUTS CONTAINER -->
+    <script src="main.js"></script>
+  </body>
+</html>
